@@ -4,9 +4,13 @@
 #
 
 app = 'distributed-systems-project-server'
-primary_region = 'ams'
+primary_region = 'gru'
 
 [build]
+    dockerfile = "Dockerfile"
+
+[env]
+  GODOT_HEADLESS = "1"
 
 [http_service]
   internal_port = 8080
