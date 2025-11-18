@@ -6,4 +6,4 @@ COPY server.x86_64 .
 
 RUN chmod +x server.x86_64
 
-CMD ["./server.x86_64"]
+CMD ["/app/server.x86_64", "--headless"]
